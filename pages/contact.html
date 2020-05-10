@@ -3,28 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Welcome to Tranquil</title>
+    <link rel="stylesheet" type="text/CSS" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Contact Us</title>
 </head>
-<body>
-    <div class = "container">
-
-            <div class = "menu">
-                <ul>
-                    <li> Tranquil</li>
-                    <li> Questionnaire</li>
-                    <li> Community</li>
-                    <li> Resources</li>
-                    <li> Plan</li>
-                    <li> FAQ</li>
-                    <li> Contact</li>
-                    <li> Login</li>
-                </ul>
-            </div>
+<body class ="faq-bg">
+    <div>
+        <header>
+        <nav>
+            <ul class="nav-area">
+                <li><a href="#">Tranquil</a></li>
+                <li><a href="#">Questionnaire</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Plan</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
     </div>
 
-   
+    <div class="container">
+
+        <h3 class="text-center">Contact Us</h3><br/>
         
-    </div>
+        <div class="row">
+          <div class="col-md-8">
+              <form action="/post" method="post">
+                <label for="name">Name</label>
+                <input class="form-control" name="name" placeholder="Name..." /><br/>
+                <label for="name">Email</label>
+                <input class="form-control" name="email" placeholder="E-mail..." /><br/>
+                <label for="name">Question</label>
+                <textarea class="form-control" name="text" placeholder="How can we help you?" style="height:100px;"></textarea><br/>
+                <input class="btn btn-primary" type="submit" value="Send" /><br /><br/>
+              </form>
+          </div>
+                
+        </div>
+        
+        </div>
 </body>
 </html>
