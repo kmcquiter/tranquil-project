@@ -159,3 +159,68 @@ header{
   label {
       color: white;
   }
+
+  .start-button
+  {
+        background-color: #000000;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+
+  /* questionnare */
+
+  #container{
+	width:60%;
+	background: #ffffff;;
+	margin:20px auto;
+	overflow:auto;
+	padding:25px;
+}
+
+
+header h1{
+	margin:0;
+    padding:0;
+    color: #000
+}
+
+header p{
+	padding:0;
+	margin-top:5px;
+	color:#000;
+}
+
+section{
+	min-height:400px;
+}
+
+footer{
+    text-align:center;
+}
+
+input[type='submit']{
+	background: #000000;;
+	border:0;
+	color:#fff;
+	padding:10px 15px;
+	cursor:pointer;
+}
+
+#results h3{
+	background:#f06226;
+	padding:10px;
+	margin:10px 0;
+}
+
+#results span{
+	color:#000;
+	font-weight:bold;
+}

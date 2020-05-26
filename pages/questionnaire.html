@@ -26,24 +26,46 @@
 </div>
 <h1 class ="middle-text"> Questionnaire</h1>
 
-<div class="container">
-    <div id="questionnaire">
-      <h2 class="question"> How are you feeling?</h2>
-      <div class="choice-container">
-        <p class="choice-prefix">A</p>
-        <p class="choice-text">Choice 1</p>
-      </div>
-      <div class="choice-container">
-        <p class="choice-prefix">B</p>
-        <p class="choice-text">Choice 2</p>
-      </div>
-      <div class="choice-container">
-        <p class="choice-prefix">C</p>
-        <p class="choice-text">Choice 3</p>
-      </div>
-      <div class="choice-container">
-        <p class="choice-prefix">D</p>
-        <p class="choice-text">Choice 4</p>
-      </div>
+<body>
+    <div id="container">
+ 
+        <section>
+            <div id="results"></div>
+            <form name="quizForm" onsubmit="return submitAnswers()">
+                <h3>1. How are you feeling ?</h3>
+                <input type="radio" name="q1" value="a" id="q1a">a. Happy<br>
+                <input type="radio" name="q1" value="b" id="q1b">b. Sad<br>
+                <input type="radio" name="q1" value="c" id="q1c">c. Angry<br>
+                <input type="radio" name="q1" value="d" id="q1d">d. Anxious<br>
+                
+                <h3>2. How often do you feel this way?</h3>
+                <input type="radio" name="q2" value="a" id="q2a">a. Always<br>
+                <input type="radio" name="q2" value="b" id="q2b">b. Often<br>
+                <input type="radio" name="q2" value="c" id="q2c">c. Only in certain situtations<br>
+                <input type="radio" name="q2" value="d" id="q2d">d. Not sure<br>
+
+                <h3>3. How do you cope with your feelings?</h3>
+                <input type="radio" name="q3" value="a" id="q3a">a. Meditation<br>
+                <input type="radio" name="q3" value="b" id="q3b">b. Hanging out with friends and family<br>
+                <input type="radio" name="q3" value="c" id="q3c">c. Workout<br>
+                <input type="radio" name="q3" value="d" id="q3d">d. Nothing<br>
+
+                <h3>4. ave you ever been to therapy before?</h3>
+                <input type="radio" name="q4" value="a" id="q4a">a. Yes, I speak with my therapist monthly<br>
+                <input type="radio" name="q4" value="b" id="q4b">b. Yes, but only went one time<br>
+                <input type="radio" name="q4" value="c" id="q4c">c. No, but I always wanted to go<br>
+                <input type="radio" name="q4" value="d" id="q4d">d. No, I rather figure out things on my own.<br>
+                <br><br>
+                <input type="submit" value="Submit Answers">
+            </form>
+        </section>
+        <footer>
+            <p>Copyright 2020, All Rights Reserved</p>
+        </footer>
+    </div>
+    <script src = "/js/questionnaire-script.js"></script>
 </body>
+  
+      
+
 </html>
