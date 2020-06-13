@@ -1,0 +1,673 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;            
+}
+
+.big-image {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("../images/calm-man.jpg");
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /*background: rgba(0, 0, 0, 0.65);*/
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.overlay h1 {
+  font-size: 65px;
+  letter-spacing: 0px;
+  margin: 0 0 5px;
+}
+
+.overlay p {
+  margin: 0;
+  font-size: 28px;
+}
+
+#vids {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px;
+}
+
+#vids a:first-of-type {
+  margin-bottom: 5px;
+}
+
+.start-button
+{
+      background-color: #000000;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+
+
+/*Navigation*/
+
+nav {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #000000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+  color: rgb(226, 226, 226);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.nav-links{
+
+  display:flex;
+  justify-content: space-between;
+  width: 45%;
+  
+}
+
+.nav-links a {
+
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.accordian{
+
+  display: none;
+  cursor: pointer;
+}
+
+.accordian div {
+  width: 25px;
+  height: 3px;
+  background-color:rgb(226, 226, 226);
+  margin: 5px;
+  transition: all 0.3s ease;
+
+}
+
+@media screen and (max-width:1024px){
+  .nav-links{
+      width: 60%;
+  }
+}
+
+@media screen and (max-width:768px){
+  body{
+      overflow-x: hidden;
+  }
+
+
+.nav-links{
+  position: absolute;
+  right: 0px;
+  height: 92vh;
+  top: 8vh;
+  background-color:#5D4954;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in;
+}
+
+.nav-links li {
+  opacity: 0;
+}
+
+.accordian {
+  display: block;
+}
+
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+
+  from {
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform:  rotate(-45deg translate(-5px, 6px));
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+
+transform:  rotate(-45deg translate(-5px, 6px));
+}
+
+/*Footer*/
+
+
+.footer{
+ background: #222222;
+ padding: 50px;
+ font-family: 'Poppins', sans-serif;
+}
+
+.footer .footer_menu{
+display: flex;
+margin-bottom: 25px;
+justify-content: space-between;
+}
+
+.footer .footer_menu .title{
+margin-bottom: 10px;
+color: #adadad;
+}
+
+.footer .footer_menu ul li a{
+display: block;
+margin-bottom: 6px;
+color: #fff;
+}
+
+.footer .footer_menu ul li a:hover{
+text-decoration: underline;
+}
+
+
+@media (max-width:768px) {
+.wrapper .navbar .logo{
+  font-size: 20px;
+}
+.main_container {
+  padding: 25px;
+}
+.main_container .item{
+  flex-direction: column;
+}
+
+.footer .footer_menu{
+  flex-direction: column;
+  width: 220px;
+  margin: 0 auto 25px;
+}
+.footer .footer_menu > div{
+  margin: 10px 0;
+}
+
+
+}
+.title-page{
+    font-size: 100px;
+    font-family: poppins;
+}
+h1 {
+    color: white;
+}
+
+p{
+    color: white;
+}
+.faq-container{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+
+a{
+    text-decoration: none;
+}
+header{
+   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 70px;
+}
+.logo{
+    cursor: pointer;
+}
+.nav-area{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+.nav-area li{
+    display: inline-block;
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-family: poppins;
+}
+.nav-area li a{
+    transition: all .3s ease 0s;
+    color: #fff;
+}
+.nav-area li a:hover{
+    color: #006C87;
+}
+.btn-area {
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background: #006C87;            
+}
+
+
+
+
+.container input {
+    min-width: 300px;
+    display: block;
+    margin: 20px;
+    padding: 15px 5px;
+    font-size: 18px;
+    font-weight: 400;
+    border-width: 0 0 2px 0;
+    border-color: grey;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgb(86, 165, 235, 0.25);
+    background-color: white;
+  }
+  
+  .choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
+  
+  .choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: black;
+    color: white;
+  }
+  
+  .choice-text {
+    padding: 1.5rem;
+  }
+
+  .question {
+      font-size: 1.8rem;
+      color: white;
+  }
+
+  label {
+      color: white;
+  }
+
+  .start-button
+  {
+        background-color: #000000;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+
+  /* questionnare */
+
+  #container{
+	width:60%;
+	background: #ffffff;;
+	margin:20px auto;
+	overflow:auto;
+	padding:25px;
+}
+
+
+header h1{
+	margin:0;
+    padding:0;
+    color: #000
+}
+
+header p{
+	padding:0;
+	margin-top:5px;
+	color:#000;
+}
+
+section{
+	min-height:400px;
+}
+
+footer{
+    text-align:center;
+}
+
+input[type='submit']{
+	background: #000000;;
+	border:0;
+	color:#fff;
+	padding:10px 15px;
+	cursor:pointer;
+}
+
+#results h3{
+	background:#f06226;
+	padding:10px;
+	margin:10px 0;
+}
+
+#results span{
+	color:#000;
+	font-weight:bold;
+}
+
+
+
+
+
+
+
+    .btn {
+        display: inline-block;
+        cursor: pointer;
+        font-weight: 400;
+        color: #212529;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+    .btn-primary {
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+    .btn-primary:active, .btn-primary:focus{
+        color: #fff;
+        background-color: #0062cc;
+        border-color: #005cbf;
+        box-shadow: 0 0 0 0.2rem rgba(38,143,255,.5);
+    }
+    .btn-success {
+        color: #fff;
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+    .btn-success:active, .btn-success:focus {
+        color: #fff;
+        background-color: #218838;
+        border-color: #1e7e34;
+        box-shadow: 0 0 0 0.2rem rgba(72,180,97,.5);
+    }
+    .question-box{
+      max-width: 450px;
+      margin:20px auto;
+      box-shadow: 0px 0px 15px #c9c9c9;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      background-color: white;
+      display: none;
+    }
+    .answers{
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .answers .ans-box{
+      display: block;
+      margin:10px auto;
+      min-width: 200px;
+    }
+    .next-question, .last-question{
+      min-width: 100px;
+    }
+    .results-box{
+      max-width: 400px;
+      margin: 50px auto 35px;
+      background-color: #007bff;
+      padding: 35px 20px;
+      text-align: center;
+      box-shadow: 0px 0px 40px #c9c9c9;
+    }
+    .res-heading{
+      margin: 25px 0px;
+      text-align: center;
+      font-weight: 700;
+    }
+    .plan-btn{
+      margin: auto;
+      display: none;
+    }
+    .toDoList-box{
+      max-width: 500px;
+      margin: 25px auto;
+      background-color: #007bff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0px 0px 40px #c9c9c9;
+    }
+    .toDoList-items{
+      padding: 10px;
+      background-color: #e6e6e6;
+      text-align: left;
+    }
+    .toDoList-items div{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tl-item{
+      margin-top:10px;
+      margin-bottom:10px;
+      padding:10px;
+      background-color:white;
+      border:1px solid #007bff;
+    }
+    .tl-item i{
+      float:right;
+      color:red;
+      cursor:pointer;
+    }
+
+    /* FAQ */
+
+    h1 {
+      text-align: center;
+      margin: 2rem 0;
+      font-size: 2.5rem;
+    }
+    
+    .accordion {
+      width: 90%;
+      max-width: 1000px;
+      margin: 2rem auto;
+    }
+    .accordion-item {
+      background-color: #fff;
+      color: #111;
+      margin: 1rem 0;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+    }
+    .accordion-item-header {
+      padding: 0.5rem 3rem 0.5rem 1rem;
+      min-height: 3.5rem;
+      line-height: 1.25rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+    }
+    .accordion-item-header::after {
+      content: "\002B";
+      font-size: 2rem;
+      position: absolute;
+      right: 1rem;
+    }
+    .accordion-item-header.active::after {
+      content: "\2212";
+    }
+    .accordion-item-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+    .accordion-item-body-content {
+      padding: 1rem;
+      line-height: 1.5rem;
+      border-top: 1px solid;
+      border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+    }
+    
+    @media(max-width:767px) {
+      html {
+        font-size: 14px;
+      }
+    }
+
+    /* contact */
+
+  
+    .wrapper-form {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+    }
+    .form-area {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 30px;
+      box-shadow: 0 40px 20px rgba(0, 0, 0, 0.5);
+    }
+    
+    img-area {
+      width: 100%;
+    }
+    .right-text h2 {
+      font-weight: 600;
+      font-size: 36px;
+      margin: 0 0 15px;
+    }
+    .right-text p {
+      font-weight: 300;
+      line-height: 24px;
+      margin: 0 0 30px 0;
+      font-family: poppins;
+      color: #000000;
+    }
+            
+      .right-text a {
+      background: brown;
+      color: #fff;
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 30px;
+                text-decoration: none;
+    }
+    
+    div.img-area {
+      height: 300px;
+      width: 100%;
+      background: url("../images/woman-meditating.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+    .right-text {
+      margin: 60px 40px;
+    }
+            
+            .right-text input {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+            .right-text textarea {
+      width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+      div.form-area {
+        flex-direction: row;
+        width: 100%;
+      }
+    div.img-area {
+        height: 420px;
+        min-width: 360px;
+      }
+     div.right-text {
+        margin: 0 60px;
+        max-width: 640px;
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      div.form-area {
+        max-width: 1000px;
+      }
+    }
